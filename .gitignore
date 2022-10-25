@@ -4,8 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
-
+config.env.local
+config.env.development.local
+config.env.test.local
+config.env.production.local
+/config.env
 config.env
+
 
 # testing
 /coverage
