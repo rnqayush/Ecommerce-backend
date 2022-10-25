@@ -10,6 +10,7 @@ config.env.test.local
 config.env.production.local
 /config.env
 config.env
+.config.env
 
 
 # testing
