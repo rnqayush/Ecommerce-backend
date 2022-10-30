@@ -1,0 +1,5 @@
+1- Learning Backend - done till Oct end
+2- Implementing Backend - done till Oct end
+3- Learning MicroService - TBD till Nov End
+4- Deploying Our Project on Cloud (Both Frontend and Backend)-TBD till Nov End
+5- Development of Frontend -
