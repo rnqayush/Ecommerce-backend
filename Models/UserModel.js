@@ -33,6 +33,9 @@ const userSchema = new mongoose.Schema({
   accountCreatedAt:String,
   accountActive:{
     type:Boolean
+  },
+  userCartItem:{
+    type:[mongoose.Schema.Types.ObjectId]
   }
 });
 

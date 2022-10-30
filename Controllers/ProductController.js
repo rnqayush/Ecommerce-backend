@@ -94,6 +94,7 @@ exports.deleteAllProduct = async (req, res) => {
 };
 
 exports.getHomeProducts = async (req, res) => {
+  console.log(req.user);
   try {
     const byTopBrand = await Product.aggregate([
       {

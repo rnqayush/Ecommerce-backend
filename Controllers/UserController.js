@@ -57,3 +57,22 @@ exports.login = async (req, res, next) => {
     createSendToken(user, 200, res);
   };
 
+  exports.userCartItem = async (req, res, next) => {
+    try {
+      const {userCartItem,_id}=req.user
+      const {productId}=req.body
+       userCartItem.push(productId)
+       const updatedUser = await User.findByIdAndUpdate(_id,{
+        $push: { userCartItem: req.body.productId }},{
+          new:true
+        }
+      )
+       res.status(200).json(updatedUser)
+      
+    } catch (error) {
+      res.status(400).json(error.message)
+    }
+  
+  };
+
+
