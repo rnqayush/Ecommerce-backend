@@ -1,9 +1,10 @@
 const express=require("express")
 const app=express() 
 const bodyParser = require('body-parser')
-const baseURL="/api/v1"
-app.use(bodyParser.json()); // compulsary to use to get requests
+app.use(bodyParser.json()); // compulsary to use to get all requests
 app.use(bodyParser.urlencoded({ extended: true }));// compulsary to use to get requests
+const baseURL="/api/v1"
+
 const productRouter=require("./Routers/ProductRouter")
 const categoryRouter=require("./Routers/CategoryRouter")
 const userRouter=require("./Routers/UserRouter")

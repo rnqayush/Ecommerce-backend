@@ -10,7 +10,7 @@ router
   .route("/")
   .get(userController.getAllUser)
 
-  
+
 router.post("/signup",userController.createUser)
 router.post("/login",userController.login)
 router.patch("/userCartItem",protect,userController.userCartItem)
